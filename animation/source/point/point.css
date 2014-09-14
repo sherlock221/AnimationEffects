@@ -1,0 +1,56 @@
+/**
+ * 指引(朝上运动)
+ */
+@keyframes pointUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(10px);
+        transform: translateY(10px);
+    }
+    40% {
+        opacity: 1;
+        -webkit-transform: translateY(4px);
+        transform: translateY(4px);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: translateY(-4px);
+        transform: translateY(-4px);
+    }
+}
+
+/**
+ * 指引(朝下运动)
+ */
+@keyframes pointDown {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(10px);
+        transform: translateY(10px);
+    }
+    40% {
+        opacity: 1;
+        -webkit-transform: translateY(4px);
+        transform: translateY(4px);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: translateY(-4px);
+        transform: translateY(-4px);
+    }
+}
+
+.pointUp{
+    animation-name :  pointUp;
+    animation-iteration-count : infinite;
+    animation-timing-function : ease-in;
+
+    /** 设置时间 **/
+    animation-duration : 1.2s;
+    animation-delay : 0s;
+}
+.pointDown{
+    animation-name :  pointDown;
+    animation-iteration-count : infinite;
+    animation-timing-function : ease-in;
+}

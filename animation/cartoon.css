@@ -45,6 +45,123 @@
   perspective: 1000;
 }
 
+/**
+ * 指引(朝上运动)
+ */
+
+@-webkit-keyframes pointUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
+  }
+
+  40% {
+    opacity: 1;
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+  }
+}
+
+@keyframes pointUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(10px);
+    -ms-transform: translateY(10px);
+    transform: translateY(10px);
+  }
+
+  40% {
+    opacity: 1;
+    -webkit-transform: translateY(4px);
+    -ms-transform: translateY(4px);
+    transform: translateY(4px);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(-4px);
+    -ms-transform: translateY(-4px);
+    transform: translateY(-4px);
+  }
+}
+
+/**
+ * 指引(朝下运动)
+ */
+
+@-webkit-keyframes pointDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
+  }
+
+  40% {
+    opacity: 1;
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+  }
+}
+
+@keyframes pointDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(10px);
+    -ms-transform: translateY(10px);
+    transform: translateY(10px);
+  }
+
+  40% {
+    opacity: 1;
+    -webkit-transform: translateY(4px);
+    -ms-transform: translateY(4px);
+    transform: translateY(4px);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(-4px);
+    -ms-transform: translateY(-4px);
+    transform: translateY(-4px);
+  }
+}
+
+.pointUp {
+  -webkit-animation-name: pointUp;
+  animation-name: pointUp;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in;
+  animation-timing-function: ease-in;
+  /** 设置时间 **/
+  -webkit-animation-duration: 1.2s;
+  animation-duration: 1.2s;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+
+.pointDown {
+  -webkit-animation-name: pointDown;
+  animation-name: pointDown;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in;
+  animation-timing-function: ease-in;
+}
+
 @-webkit-keyframes spin {
   0% {
     -webkit-transform: rotate(0deg);
@@ -164,10 +281,10 @@
 }
 
 /**
- * 閃光
+ * 高闪光
  */
 
-@-webkit-keyframes flash {
+@-webkit-keyframes flash-high {
   0%, 50%, 100% {
     opacity: 1;
   }
@@ -177,12 +294,44 @@
   }
 }
 
-@keyframes flash {
+@keyframes flash-high {
   0%, 50%, 100% {
     opacity: 1;
   }
 
   25%, 75% {
+    opacity: 0;
+  }
+}
+
+/**
+ * 闪光
+ */
+
+@-webkit-keyframes flash {
+  0% {
+    opacity: 0;
+  }
+
+  60% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes flash {
+  0% {
+    opacity: 0;
+  }
+
+  60% {
+    opacity: 1;
+  }
+
+  100% {
     opacity: 0;
   }
 }
@@ -190,6 +339,11 @@
 .flash {
   -webkit-animation-name: flash;
   animation-name: flash;
+}
+
+.flash-high {
+  -webkit-animation-name: flash-high;
+  animation-name: flash-high;
 }
 
 /**

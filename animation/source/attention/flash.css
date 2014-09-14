@@ -1,8 +1,8 @@
 /**
- * 閃光
+ * 高闪光
  */
 
-@keyframes flash {
+@keyframes flash-high {
   0%, 50%, 100% {
     opacity: 1;
   }
@@ -12,6 +12,26 @@
   }
 }
 
+/**
+ * 闪光
+ */
+@keyframes flash {
+    0% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
+
 .flash {
   animation-name: flash;
+}
+.flash-high {
+    animation-name: flash-high;
 }
