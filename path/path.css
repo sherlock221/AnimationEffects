@@ -1,0 +1,188 @@
+body{
+    background-color: #e62f17;
+    width: 100%;
+    height: 100%;
+}
+
+.talk{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 197px;
+    height: 242px;
+    cursor: pointer;
+    overflow: visible;
+
+    margin-left:  -100px;
+    margin-top: -120px;
+}
+.path-logo{
+    background-image: url("images/path-logo.png");
+    -webkit-background-size: 197px 152px;
+    -moz-background-size: 197px 152px;
+    background-size: 197px 152px;
+    width: 197px;
+    height: 152px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+
+
+}
+
+
+
+
+
+.talk .weather{
+    background-image: url('images/weather.png');
+    -webkit-background-size: 50px 50px;
+    -moz-background-size: 50px 50px;
+    background-size: 50px 50px;
+    width: 50px;
+    height: 50px;
+    text-indent: -1000px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    z-index: 1;
+
+
+    -webkit-transition: top .1s,left .1s;
+    -moz-transition: top .1s,left .1s;
+    -o-transition: top .1s,left .1s;
+    -ms-transition: top .1s,left .1s;
+    transition: top .1s,left .1s;
+
+
+}
+
+.talk .cloudy{
+    background-image: url('images/cloud.png');
+    -webkit-background-size: 64px 64px;
+    -moz-background-size: 64px 64px;
+    background-size: 64px 64px;
+    width: 64px;
+    height: 64px;
+    text-indent: -1000px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    z-index: 1;
+    -webkit-transition: top .3s,left .3s;
+    -moz-transition: top .3s,left .3s;
+    -o-transition: top .3s,left .3s;
+    -ms-transition: top .3s,left .3s;
+    transition: top .3s,left .3s;
+
+}
+
+.talk .running{
+    background-image: url('images/running.png');
+    -webkit-background-size: 64px 64px;
+    -moz-background-size: 64px 64px;
+    background-size: 64px 64px;
+    width: 64px;
+    height: 64px;
+    text-indent: -1000px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    z-index: 2;
+    -webkit-transition: top .3s,left .3s;
+    -moz-transition: top .3s,left .3s;
+    -o-transition: top .3s,left .3s;
+    -ms-transition: top .3s,left .3s;
+    transition: top .3s,left .3s;
+
+}
+
+.talk .transit{
+
+    background-image: url('images/transit.png');
+    -webkit-background-size: 55px 55px;
+    -moz-background-size: 55px 55px;
+    background-size: 55px 55px;
+    width: 55px;
+    height: 55px;
+    text-indent: -1000px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    z-index: 2;
+    -webkit-transition: top .5s,left .5s;
+    -moz-transition: top .5s,left .5s;
+    -o-transition: top .5s,left .5s;
+    -ms-transition: top .5s,left .5s;
+    transition: top .5s,left .5s;
+
+}
+
+.talk .music{
+    background-image: url('images/music.png');
+    -webkit-background-size: 77px 77px;
+    -moz-background-size: 77px 77px;
+    background-size: 77px 77px;
+    width: 77px;
+    height: 77px;
+    text-indent: -1000px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    z-index: 1;
+    -webkit-transition: top .2s,left .2s;
+    -moz-transition: top .2s,left .2s;
+    -o-transition: top .2s,left .2s;
+    -ms-transition: top .2s,left .2s;
+    transition: top .2s,left .2s;
+
+}
+
+.talk .nearby{
+    background-image: url('images/nearby.png');
+    -webkit-background-size: 55px 55px;
+    -moz-background-size: 55px 55px;
+    background-size: 55px 55px;
+    width: 55px;
+    height: 55px;
+    text-indent: -1000px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    z-index: 1;
+    -webkit-transition: top .4s,left .4s;
+    -moz-transition: top .4s,left .4s;
+    -o-transition: top .4s,left .4s;
+    -ms-transition: top .4s,left .4s;
+    transition: top .4s,left .4s;
+
+}
+
+
+
+
+/** 过渡 **/
+.talk:hover div.weather{  top: -26px; left: -9px;opacity: 1; -ms-filter: none; filter: none;}
+.talk:hover div.cloudy{  top: -50px; left: 79px;opacity: 1; -ms-filter: none; filter: none;}
+.talk:hover div.running{  top: -11px; left: 153px;opacity: 1; -ms-filter: none; filter: none;}
+.talk:hover div.transit{  top: 102px; left: -19px;opacity: 1; -ms-filter: none; filter: none;}
+.talk:hover div.music{  top:  39px; left: -40px;opacity: 1; -ms-filter: none; filter: none;}
+.talk:hover div.nearby{  top:  40px; left: 166px;opacity: 1; -ms-filter: none; filter: none;}
+
+
+
