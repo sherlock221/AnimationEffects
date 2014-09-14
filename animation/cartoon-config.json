@@ -1,6 +1,8 @@
 
 {
-
+  "rotate" : {
+      "spin" : true
+  },
   "attention": {
     "bounce": true,
     "flash": true,

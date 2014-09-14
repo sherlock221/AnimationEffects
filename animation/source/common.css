@@ -2,6 +2,11 @@
 
 
 
+/** 循环动画 **/
+.an-infinite{
+    animation-iteration-count : infinite;
+}
+
 
 /** 保持结束帧 **/
 .an-util-forwards{
