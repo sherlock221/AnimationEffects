@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>兼容个浏览器进度条动画</title>
+    <script type="text/javascript" src="requestAnimationFrame.js"></script>
+</head>
+<body>
+
+
+<div id="test" style="width:1px;height:17px;background:#0f0;">0%</div>
+<input type="button" value="Run" id="run"/>
+
+
+
+</body>
+<script type="text/javascript">
+
+    //在ie下 或不支持 requre下 自定切换到 setTimeout-
+    var start = null;
+    var ele = document.getElementById("test");
+    var progress = 0;
+
+    function step(timestamp){
+        progress++;
+        ele.style.width = progress  + "%";
+        ele.innerHTML=progress + "%";
+
+        //递归条件
+        if(progress < 100){
+            requestAnimationFrame(step);
+        }
+    }
+
+    //初始化
+    document.getElementById("run").addEventListener("click", function() {
+        ele.style.width = "1px";
+        progress = 0;
+        requestAnimationFrame(step);
+    }, false);
+
+</script>
+</html>
