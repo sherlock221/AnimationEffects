@@ -1,0 +1,23 @@
+
+实现css 计数器
+1.counter-reset
+2. counter-increment
+3. counter()/counters()
+
+
+.xxx { counter-reset: small-apple 2; } /* 计数器名称是'small-apple', 并且默认起始值是2 */
+
+注意 counter-reset 是唯一的
+
+规则
+
+CSS的计数器的计数是有一套规则的，
+我将之形象地称为“普照规则”。
+具体来讲就是：普照源(counter-reset)唯一，
+每普照(counter-increment)1次，普照源增加1次计数值。
+
+
+浏览器 支持情况  ie8+
+
+应用场景 ： 只要有有序序号呈现的地方，就能使用CSS计数器。
+
