@@ -30,6 +30,7 @@
     animation-name: spin;
     animation-iteration-count : infinite;
     animation-timing-function : linear;
+    animation-fill-mode: both;
 }
 
 
@@ -38,4 +39,5 @@
  */
 .spin.inverse{
     animation-name: spin-inverse;
+
 }

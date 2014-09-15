@@ -1,3 +1,7 @@
 s1_ani_1 是最外层的圆环 采用 spin  顺时针
 s1_ani_2 是第二层线环   采用 spin  逆时针
 s1_ani_3 是底部 颜色    无动画
+
+
+指针采用 transform-orgin : x y z  设置旋转轨道的中心点  默认为当前元素的 50% 50%
+transform-origin是变形原点，也就是该元素围绕着那个点变形或旋转，该属性只有在设置了transform属性的时候起作用；

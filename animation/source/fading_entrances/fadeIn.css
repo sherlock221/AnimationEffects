@@ -5,4 +5,5 @@
 
 .fadeIn {
   animation-name: fadeIn;
+  animation-fill-mode: both;
 }

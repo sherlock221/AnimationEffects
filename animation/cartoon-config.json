@@ -3,6 +3,13 @@
   "scale"  : {
     "disperse" : true
   },
+  "scale_entrances" :{
+     "scaleIn" : true
+  },
+  "scale_exits" : {
+    "scaleOut" : true
+  },
+
   "point"  :{
       "point" :true
   },

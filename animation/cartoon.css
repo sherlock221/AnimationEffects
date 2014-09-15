@@ -151,6 +151,92 @@
 }
 
 /**
+ * 缩小 进入
+ */
+
+@-webkit-keyframes scaleIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(4,4);
+    transform: scale(4,4);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1,1);
+    transform: scale(1,1);
+  }
+}
+
+@keyframes scaleIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(4,4);
+    -ms-transform: scale(4,4);
+    transform: scale(4,4);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1,1);
+    -ms-transform: scale(1,1);
+    transform: scale(1,1);
+  }
+}
+
+.scaleIn {
+  -webkit-animation-name: scaleIn;
+  animation-name: scaleIn;
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+/**
+ * 缩小离场
+ */
+
+@-webkit-keyframes scaleOut {
+  0% {
+    opacity: 1;
+    -webkit-transform: scale(1,1);
+    transform: scale(1,1);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(0.3,0.3);
+    transform: scale(0.3,0.3);
+  }
+}
+
+@keyframes scaleOut {
+  0% {
+    opacity: 1;
+    -webkit-transform: scale(1,1);
+    -ms-transform: scale(1,1);
+    transform: scale(1,1);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(0.3,0.3);
+    -ms-transform: scale(0.3,0.3);
+    transform: scale(0.3,0.3);
+  }
+}
+
+.scaleOut {
+  -webkit-animation-name: scaleOut;
+  animation-name: scaleOut;
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+/**
  * 指引(朝上运动)
  */
 
@@ -352,6 +438,8 @@
   animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
   animation-timing-function: linear;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
 }
 
 /**
@@ -1548,6 +1636,8 @@
 .fadeIn {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
 }
 
 @-webkit-keyframes fadeInDown {

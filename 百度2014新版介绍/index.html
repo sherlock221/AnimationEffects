@@ -16,7 +16,15 @@
             z-index: 9;
             width: 550px;
             height: 430px;
-            margin-left: 20px;
+
+            position: absolute;
+            top: 50%;
+            margin-top:  -265px;
+            left: 50%;
+            margin-left: -225px;
+
+            -webkit-animation-duration : 700ms;
+            -webkit-animation-delay : 300ms;
         }
 
 
@@ -67,23 +75,70 @@
             top: 35px;
             left: 105px;
 
-            -webkit-animation-duration : 2s;
-            -webkit-delay : 0s;
+            -webkit-animation : rotateCW2 2s linear 0s both;
         }
+
+        #s1_ani_42{
+            width: 118px;
+            height: 157px;
+            display: inline-block;
+            position: absolute;
+            background: url("image/s1_52.png") no-repeat;
+            top: 35px;
+            left: 261px;
+
+            -webkit-animation-duration : 200ms;
+            -webkit-animation-delay : 1900ms;
+        }
+
+        #s1_ani_5, #s1_ani_52{
+
+            width: 9px;
+            height: 158px;
+            display: inline-block;
+            position: absolute;
+            background: url("image/s1_3.png") no-repeat;
+            top: 33px;
+            left: 257px;
+        }
+
+        #s1_ani_52{
+            -webkit-animation : rotateCW2 2s linear 0s both;
+             -webkit-transform-origin: 50% 100%;
+             transform-origin : 50% 100%;
+        }
+
+
+        @-webkit-keyframes rotateCW2 {
+            0%	{ -webkit-transform: rotateZ(0deg);}
+            100%	{ -webkit-transform: rotateZ(769deg);}
+        }@-moz-keyframes rotateCW2 {
+             0%	{ -moz-transform: rotateZ(0deg);}
+             100%	{ -moz-transform: rotateZ(769deg);}
+         }@-ms-keyframes rotateCW2 {
+              0%	{ -ms-transform: rotateZ(0deg);}
+              100%	{ -ms-transform: rotateZ(769deg);}
+          }@-o-keyframes rotateCW2 {
+               0%	{ -o-transform: rotateZ(0deg);}
+               100%	{ -o-transform: rotateZ(769deg);}
+           }@keyframes rotateCW2 {
+                0%	{ transform: rotateZ(0deg);}
+                100%	{ transform: rotateZ(769deg);}
+            }
     </style>
 </head>
 <body>
 
 
-<div id="s1_ani">
+<div id="s1_ani" class="scaleIn ">
 
     <!--  外层圆环  -->
     <div id="s1_ani_1" class="spin "></div>
 
     <div id="s1_ani_2" class="spin inverse"></div>
     <div id="s1_ani_3"></div>
-    <div id="s1_ani_4" class="spin an-count-2"></div>
-    <div id="s1_ani_42"></div>
+    <div id="s1_ani_4" class=" "></div>
+    <div id="s1_ani_42" class="fadeIn "></div>
     <div id="s1_ani_5"></div>
     <div id="s1_ani_52"></div>
 </div>

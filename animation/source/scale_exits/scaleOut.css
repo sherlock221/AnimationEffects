@@ -1,0 +1,16 @@
+/**
+ * 缩小离场
+ */
+@keyframes scaleOut{
+     0%	{ opacity: 1; transform: scale(1,1);}
+     100%{ opacity: 0; 	transform: scale(0.3,0.3);}
+ }
+
+
+
+
+.scaleOut{
+    animation-name :  scaleOut;
+    animation-timing-function : ease;
+    animation-fill-mode: both;
+}
