@@ -11,8 +11,31 @@
 }
 
 
+@keyframes spin-inverse {
+    0% {
+        transform: rotate(360deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+/**
+ * 顺时针
+ */
 .spin{
     animation-name: spin;
     animation-iteration-count : infinite;
     animation-timing-function : linear;
+}
+
+
+/**
+ * 逆时针
+ */
+.spin.inverse{
+    animation-name: spin-inverse;
 }

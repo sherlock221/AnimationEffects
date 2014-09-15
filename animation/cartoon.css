@@ -7,6 +7,21 @@
   animation-iteration-count: infinite;
 }
 
+.an-count-1 {
+  -webkit-animation-iteration-count: 1 !important;
+  animation-iteration-count: 1 !important;
+}
+
+.an-count-2 {
+  -webkit-animation-iteration-count: 2 !important;
+  animation-iteration-count: 2 !important;
+}
+
+.an-count-3 {
+  -webkit-animation-iteration-count: 3 !important;
+  animation-iteration-count: 3 !important;
+}
+
 /** 保持结束帧 **/
 
 .an-util-forwards {
@@ -43,6 +58,96 @@
   -webkit-perspective: 1000;
   -ms-perspective: 1000;
   perspective: 1000;
+}
+
+/**
+ * 气泡(普通)
+ */
+
+@-webkit-keyframes disperse {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.1);
+    transform: scale(0.1);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes disperse {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.1);
+    -ms-transform: scale(0.1);
+    transform: scale(0.1);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+/**
+ * 气泡(高闪)
+ */
+
+@-webkit-keyframes disperse-high {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.1);
+  }
+
+  50% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(0.1);
+  }
+}
+
+@keyframes disperse-high {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.1);
+  }
+
+  50% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(0.1);
+  }
+}
+
+.disperse {
+  -webkit-animation-name: disperse;
+  animation-name: disperse;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+
+.disperse-high {
+  -webkit-animation-name: disperse-high;
+  animation-name: disperse-high;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
 }
 
 /**
@@ -199,6 +304,47 @@
   }
 }
 
+@-webkit-keyframes spin-inverse {
+  0% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+
+  50% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes spin-inverse {
+  0% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+
+  50% {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+
+/**
+ * 顺时针
+ */
+
 .spin {
   -webkit-animation-name: spin;
   animation-name: spin;
@@ -206,6 +352,15 @@
   animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
   animation-timing-function: linear;
+}
+
+/**
+ * 逆时针
+ */
+
+.spin.inverse {
+  -webkit-animation-name: spin-inverse;
+  animation-name: spin-inverse;
 }
 
 /**
