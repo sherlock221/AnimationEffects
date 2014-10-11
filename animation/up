@@ -1,0 +1,4 @@
+10-11
+修复android部分手机动画执行不完全
+替换掉transform none
+fade    roll
