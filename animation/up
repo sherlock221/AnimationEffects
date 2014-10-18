@@ -2,3 +2,11 @@
 修复android部分手机动画执行不完全
 替换掉transform none
 fade    roll
+
+10 19
+添加了 magin css库的几个动画
+space
+rotate3d淡出
+模糊渐入 渐出(需要css3 滤镜支持)
+门帘效果
+curtain
