@@ -110,6 +110,11 @@
   }
 }
 
+.vanishIn {
+  -webkit-animation-name: vanishIn;
+  animation-name: vanishIn;
+}
+
 /**
 *  模糊 渐出
 *  -webkit-filter css3滤镜
@@ -158,6 +163,11 @@
     transform: scale(2, 2);
     -webkit-filter: blur(20px);
   }
+}
+
+.vanishOut {
+  -webkit-animation-name: vanishOut;
+  animation-name: vanishOut;
 }
 
 /**

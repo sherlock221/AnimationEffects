@@ -17,3 +17,7 @@
         -webkit-filter: blur(20px);
     }
 }
+
+.vanishOut{
+    animation-name : vanishOut;
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="format-detection" content="telephone=no, email=no"/>
+
+    <link rel="stylesheet" type="text/css" href="../animation/cartoon.css">
+
+    <title>webapp 页面基本结构</title>
+    <style type="text/css">
+
+        * {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        html, body, .wrap-page {
+            height: 100%;
+            width: 100%;
+        }
+        .header,.footer,.wrap-page{
+            position:absolute;
+            left:0;
+            right:0;
+        }
+        .header,.footer{
+            height:44px;
+            background-color: #fff;
+            text-align: center;
+            z-index:900;
+            line-height:44px;
+        }
+        .header{
+            top: 0;
+            border-bottom: 1px solid #f00;
+        }
+        .footer{
+            bottom: 0;
+            border-top: 1px solid #f00;
+        }
+        .wrap-page{
+            top: 44px;
+            bottom: 44px;
+            overflow-y:auto;
+            width: 100%;
+            -webkit-overflow-scrolling:touch;
+        }
+        .page{
+            padding: 10px;
+        }
+        .page p{
+            margin-bottom: 10px;
+        }
+
+        .hide{
+            display: none;
+        }
+        .seq{
+            width: 100px;
+            height: 100px;
+            background: #c0c0c0;
+
+            position: absolute;
+            left: 50%;
+            margin-left: -50px;
+            top:20px;
+
+        }
+        .vin{
+            -webkit-animation: vanishIn 1.5s linear 0.3s 1 both;
+        }
+
+        .vout{
+            -webkit-animation: vanishOut 1.5s linear 0.3s 1 both;
+        }
+
+    </style>
+</head>
+<body>
+
+            <div  class="seq" onclick=""></div>
+
+        <script type="text/javascript">
+            var seq = document.querySelector(".seq")
+             seq.classList.add("vout");
+            setTimeout(function(){
+                seq.classList.remove("vout");
+                seq.classList.add("vin");
+            },1800);
+        </script>
+
+</body>
+</html>
