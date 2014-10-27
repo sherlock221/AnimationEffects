@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>循环文字轮播</title>
+
+
+    <style type="text/css">
+
+        ul, li {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .loop_world {
+            /** 设置字体基本属性 **/
+            text-align: center;
+            font-size: 12px;
+            height: 18px;
+            line-height: 18px;
+            overflow: hidden;
+        }
+
+        .loop_world_list {
+            margin: 0;
+            padding: 0;
+            position: relative;
+
+            /** 动画 **/
+            -webkit-animation : scroll-3 9s ease infinite both;
+        }
+
+        @-webkit-keyframes scroll-3 {
+            0% {
+                -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
+            }
+
+            25% {
+                -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
+            }
+
+            33% {
+                -webkit-transform: translate3d(0, -18px, 0);
+                transform: translate3d(0, -18px, 0);
+            }
+
+            58% {
+                -webkit-transform: translate3d(0, -18px, 0);
+                transform: translate3d(0, -18px, 0);
+            }
+
+            66% {
+                -webkit-transform: translate3d(0, -36px, 0);
+                transform: translate3d(0, -36px, 0);
+            }
+
+            92% {
+                -webkit-transform: translate3d(0, -36px, 0);
+                transform: translate3d(0, -36px, 0);
+            }
+
+            100% {
+                -webkit-transform: translate3d(0, -54px, 0);
+                transform: translate3d(0, -54px, 0);
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+
+<section style="text-align: center">
+    <div class="loop_world">
+        <ul class="loop_world_list">
+            <li>我们的征途是星辰大海</li>
+            <li>梦想是指引我们前行的方向</li>
+            <li>所以向心怀梦想的你发出邀请</li>
+            <li>我们的征途是星辰大海</li>
+        </ul>
+    </div>
+</section>
+
+
+</body>
+</html>
