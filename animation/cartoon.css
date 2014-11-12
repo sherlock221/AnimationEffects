@@ -60,59 +60,16 @@
   perspective: 1000;
 }
 
-/**
-*  模糊 渐入
-*  -webkit-filter css3滤镜
-*  兼容性 ios 7+   android 4.4+
-*/
-
-@-webkit-keyframes vanishIn {
-  0% {
-    opacity: 0;
-    -webkit-transform-origin: 50% 50%;
-    transform-origin: 50% 50%;
-    -webkit-transform: scale(2, 2);
-    transform: scale(2, 2);
-    -webkit-filter: blur(90px);
-  }
-
-  100% {
-    opacity: 1;
-    -webkit-transform-origin: 50% 50%;
-    transform-origin: 50% 50%;
-    -webkit-transform: scale(1, 1);
-    transform: scale(1, 1);
-    -webkit-filter: blur(0px);
-  }
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
 }
 
-@keyframes vanishIn {
-  0% {
-    opacity: 0;
-    -webkit-transform-origin: 50% 50%;
-    -ms-transform-origin: 50% 50%;
-    transform-origin: 50% 50%;
-    -webkit-transform: scale(2, 2);
-    -ms-transform: scale(2, 2);
-    transform: scale(2, 2);
-    -webkit-filter: blur(90px);
-  }
-
-  100% {
-    opacity: 1;
-    -webkit-transform-origin: 50% 50%;
-    -ms-transform-origin: 50% 50%;
-    transform-origin: 50% 50%;
-    -webkit-transform: scale(1, 1);
-    -ms-transform: scale(1, 1);
-    transform: scale(1, 1);
-    -webkit-filter: blur(0px);
-  }
-}
-
-.vanishIn {
-  -webkit-animation-name: vanishIn;
-  animation-name: vanishIn;
+.animated.hinge {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
 }
 
 /**

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>music</title>
+    <link type="text/css" rel="stylesheet"  href="../comon/css/normalize.css" />
+
+
+    <style type="text/css">
+
+        .u-globalAudio {
+            color: #fff;
+            text-decoration: none;
+            font-size: 24px;
+            position: fixed;
+            left: 50%;
+            margin-left: 248px;
+            bottom: 28px;
+            display: block;
+            z-index: 9999;
+        }
+
+
+        .u-globalAudio .icon-music {
+            width: 54px;
+            height: 54px;
+            background: url(img/units-icons.png);
+            display: block;
+        }
+
+        .u-globalAudio span {
+            position: absolute;
+            left: -60px;
+            top: 10px;
+            text-shadow: 1px 1px 1px #000;
+            letter-spacing: 2px;
+            -webkit-transition: all .2s linear;
+            opacity: 0;
+            -webkit-transform: translateX(-20px);
+        }
+
+        .u-globalAudio .coffee-steam-box {
+            -webkit-transform: translate(-40px,-40px);
+        }
+    </style>
+</head>
+<body style="background: darkcyan;">
+
+
+
+<div>
+
+
+    <a href="javascript:void(0);" class="u-globalAudio z-play">
+        <i class="icon-music"></i>
+        <audio src="music/01.mp3" autoplay="" loop=""></audio>
+        <span class="">开启</span>
+
+        <div class="coffee-steam-box"
+             style="height: 100px; width: 50px; left: 35px; top: -50px; position: absolute; overflow: hidden; z-index: 0;">
+            <span class="coffee-steam"></span>
+        </div>
+    </a>
+
+
+</div>
+
+</body>
+</html>

@@ -1,6 +1,8 @@
 {
 
-
+    "base": {
+        "animate": true
+    },
     "bling_in": {
         "vanishIn": true
     },
